@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail login</title>
+
+  <style>
+   #fullscreen-video {
+          width: 100%;
+         height: 100%;
+         margin: 0%;
+         object-fit: contain; 
+    }
+
+
+    input {
+      width: 300px;
+      border: none;
+      background-color: whitesmoke;
+      font-size: 20px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+      padding: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    input:focus {
+      color: white;
+      background-color: rgba(70, 130, 180, 0.35);
+    }
+
+    button {
+      width: 100px;
+      height: 40px;
+      border-radius: 5px;
+      color: white;
+      font-size: 18px;
+      background-color: fuchsia;
+
+      border: none;
+      margin: 20px;
+
+    }
+
+
+    div {
+      position: absolute;
+      top: 15%;
+      left: 35%;
+      border: 1px solid white;
+      border-radius: 4px;
+
+      padding-left: 40px;
+      padding-right: 20px;
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <section id="block">
+
+    <!-- <div class="video-container">
+        <video autoplay muted loop>
+          <source src="Heroes United in the Sun ｜ Zack Snyder's Justice League (Scene).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+        width="1400" height="830" -->
+
+    <video id="fullscreen-video" autoplay muted loop  >
+      <source src="Heroes United in the Sun ｜ Zack Snyder's Justice League (Scene).mp4" type="video/mp4">
+    </video>
+
+    <div>
+      <form action="" id="lab-form">
+        <h1>Create Gmail Account</h1>
+
+        <input type="text" id="name" title="name" placeholder="Full Name" required>
+        <br>
+        <input type="number" title="contact_no" min="0000000000" max="9999999999" placeholder="Contact Number" required>
+        <br>
+        <input type="email" title="email" placeholder="Enter email id" required>
+        <br>
+        <button form="lab-form" type="reset">Reset</button>
+        <button form="lab-form" type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+
+</body>
+
+</html>

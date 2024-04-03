@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LAB 01 console</title>
+    <style>
+        header{
+            border: 2px;
+            background-color: red;
+
+        }
+
+        .menu-items{
+            list-style-type: none;
+        
+            padding: 0;
+            margin: 0;
+        }
+
+        #Nav-list {
+        
+         background-color:  darkgray;
+        }
+
+        #Nav-list > li{
+            display: inline-block;
+       }
+
+       #Nav-list > li > a{
+           display: inline-block;
+           padding: 10px;
+           color: white;
+           text-decoration: none;  /*for removing underlines of the link */
+       }
+
+       #Nav-list > li > a:hover{
+        background-color: black;
+
+       }
+
+       /* #sabmenu{
+        background-color: lightgrey;
+       } */
+
+       #parent-hai{
+        position: relative;
+       }
+
+       #bachha-hai{
+        position: absolute;
+        background-color: lightgrey;
+        padding: 15px;
+        top: 39px;
+        left: 1s0px;
+        text-decoration: none;
+        white-space: nowrap; /* All Miss placed link comes in one singleline*/
+        display: none; /* hides the sub menu*/
+       }
+
+       #parent-hai:hover #bachha-hai{
+        display: block; /* showes the hiden the sub menu*/
+       }
+
+       #parent-for3{
+        position: relative;
+       }
+
+       #bachha-for3{ position: absolute;
+        background-color: lightgrey;
+        padding: 15px;
+        top: 39px;
+        left: 1s0px;
+        text-decoration: none;
+        white-space: nowrap; /* All Miss placed link comes in one singleline*/
+        display: none; /* hides the sub menu*/
+
+       }
+
+       #parent-for3:hover #bachha-for3{
+        display: block;
+       }
+
+       #header{
+        background-color: red;
+        padding: 10px; 
+        text-align: right;
+        margin: 0;
+       }
+
+
+    </style>
+</head>
+<body>
+       <header id="header">
+         <h1>Demo of Dropdown</h1>
+       </header> 
+    <nav>
+      <ul id="Nav-list" class="menu-items">
+        
+        <li>
+            <a href="/link11">Link 1</a>
+        </li>
+
+        <li id="parent-hai">
+            <a href="/link22">Link 2</a>
+
+            <ul id="bachha-hai" class="menu-items">
+                <li>
+                    <a href="/dd link11">DD_Link 1</a>
+                </li>
+                <li>
+                    <a href="/dd link22">DD_Link 2</a>
+                </li>
+                <li>
+                    <a href="/dd link33">DD_Link 3</a>
+                 </li>
+                </ul>
+        </li>        
+        
+        <li id="parent-for3">
+            <a href="/linlk30">Link 3</a>
+
+            <ul id="bachha-for3" class="menu-items">
+                <li>
+                    <a href="/dd link32">DD_Link 31</a>
+                </li>
+                <li>
+                    <a href="/ddlink32">DD_Link 32</a>
+                </li>
+                <li>
+                    <a href="/linl34">DD_Link 34</a>
+                 </li>
+                </ul>
+            
+        </li>
+
+     </ul>
+    </nav>
+</body>
+</html>
